@@ -68,11 +68,11 @@ use pyo3::prelude::*;
 use pyo3::pybacked::PyBackedStr;
 use pyo3::types::{PyCapsule, PyList, PyTuple};
 
-use arrow_data::ArrayData;
-use arrow_schema::{ArrowError, DataType, Field, Schema};
 use arrow_array::ffi;
 use arrow_array::ffi::{FFI_ArrowArray, FFI_ArrowSchema};
 use arrow_array::ffi_stream::{ArrowArrayStreamReader, FFI_ArrowArrayStream};
+use arrow_data::ArrayData;
+use arrow_schema::{ArrowError, DataType, Field, Schema};
 
 import_exception!(pyarrow, ArrowException);
 /// Represents an exception raised by PyArrow.
