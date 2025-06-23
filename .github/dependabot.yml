@@ -1,7 +1,9 @@
 version: 2
 updates:
   - package-ecosystem: cargo
-    directory: "/"
+    directories:
+      - "/"
+      - "/arrow-pyarrow-integration-testing"
     schedule:
       interval: daily
     open-pull-requests-limit: 10
